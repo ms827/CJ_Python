@@ -13,7 +13,10 @@ def main():
     user_in = input("문자 한개 입력하시오")
 
     ####### 구현 시작 ################
-
+    if user_in==user_in.lower():
+        user_in=user_in.upper()
+    else:
+        user_in=user_in.lower()
 
     ########구현 끝 #######################
 

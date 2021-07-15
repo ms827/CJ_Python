@@ -25,8 +25,19 @@ def main():
     user_in = input("입력:")
     price = None
     ####### 구현 시작 ################
+    user_in = user_in.split()
+    amount = user_in[0]
+    currency = user_in[1]
 
-
+    if currency == "달러":
+        ratio = 1167
+    elif currency == "엔":
+        ratio = 1.906
+    elif currency == "유로":
+        ratio = 1268
+    else:
+        ratio = 171
+    price = ratio * int(amount)
     ########구현 끝 #######################
     
     print("-------------------------------------------------------------------------------")

@@ -20,7 +20,14 @@ def main():
     phone_number = input("휴대전화 번호 입력 : ")
     mesg = None
     ####### 구현 시작 ################
-
+    if phone_number[0:3] == "011":
+        mesg = "당신은 SKT 사용자입니다."
+    elif phone_number[0:3] == "016":
+        mesg = "당신은 KT 사용자입니다."
+    elif phone_number[0:3] == "019":
+        mesg = "당신은 LGU 사용자입니다."
+    else:
+        mesg="당신은 알수 없는 사용자 입니다"
 
     ########구현 끝 #######################
 

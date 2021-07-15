@@ -15,7 +15,19 @@ def main():
     number3 = input("input number3:")
 
     max_num=None
+    num1=int(number1)
+    num2=int(number2)
+    num3=int(number3)
     ####### 구현 시작 ################
+    if num1 > num2:
+        max_num = num1
+    else:
+        max_num = num2
+
+    if num3 > max_num:
+       max_num = num3
+
+
 
 
     ########구현 끝 #######################
